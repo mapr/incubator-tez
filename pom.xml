@@ -37,7 +37,7 @@
   <properties>
     <maven.test.redirectTestOutputToFile>true</maven.test.redirectTestOutputToFile>
     <clover.license>${user.home}/clover.license</clover.license>
-    <hadoop.version>2.2.0</hadoop.version>
+    <hadoop.version>2.4.0-mapr-4.0.0-SNAPSHOT</hadoop.version>
     <jetty.version>7.6.10.v20130312</jetty.version>
     <distMgmtSnapshotsId>apache.snapshots.https</distMgmtSnapshotsId>
     <distMgmtSnapshotsName>Apache Development Snapshot Repository</distMgmtSnapshotsName>
@@ -73,6 +73,11 @@
       <id>${distMgmtSnapshotsId}</id>
       <name>${distMgmtSnapshotsName}</name>
       <url>${distMgmtSnapshotsUrl}</url>
+    </repository>
+    <repository>
+      <id>mapr-internal</id>
+      <name>mapr internal repo</name>        
+      <url>http://maven.corp.maprtech.com/nexus/content/repositories/public/</url>
     </repository>
   </repositories>
 

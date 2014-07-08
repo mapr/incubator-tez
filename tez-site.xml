@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- Tez properties -->
+
+<!-- 
+<property>
+  <name>fs.default.name</name>
+  <value>maprfs:///</value>
+</property>
+<property>
+  <name>tez.lib.uris</name>
+  <value>${fs.default.name}/apps/tez/tez-0.4.0-incubating,${fs.default.name}/apps/tez/tez-0.4.0-incubating/lib</value>
+</property>
+-->
+</configuration>
