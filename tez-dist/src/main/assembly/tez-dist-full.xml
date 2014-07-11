@@ -21,7 +21,7 @@
   <files>
     <file>
       <source>../tez-site.xml</source>
-      <outputDirectory>/</outputDirectory>
+      <outputDirectory>/conf</outputDirectory>
     </file>
   </files>
   <moduleSets>
