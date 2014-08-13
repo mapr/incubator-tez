@@ -5,9 +5,8 @@
 
 <configuration xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<!-- Sample Tez properties -->
-
-<!-- 
+<!-- Tez properties -->
+ 
 <property>
   <name>fs.default.name</name>
   <value>maprfs:///</value>
@@ -16,6 +15,5 @@
   <name>tez.lib.uris</name>
   <value>${fs.default.name}/apps/tez/tez-0.4.0,${fs.default.name}/apps/tez/tez-0.4.0/lib</value>
 </property>
--->
 
 </configuration>
