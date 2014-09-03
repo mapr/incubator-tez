@@ -104,6 +104,7 @@ import org.apache.tez.mapreduce.hadoop.MultiStageMRConfigUtil;
 import org.apache.tez.mapreduce.processor.map.MapProcessor;
 import org.apache.tez.mapreduce.processor.reduce.ReduceProcessor;
 import org.apache.tez.runtime.library.input.ShuffledMergedInputLegacy;
+import org.apache.hadoop.yarn.api.records.NodeToLabelsList;
 import org.apache.tez.runtime.library.output.OnFileSortedOutput;
 
 import com.google.common.annotations.VisibleForTesting;
@@ -195,6 +196,16 @@ public class YARNRunner implements ClientProtocol {
   @Override
   public JobStatus[] getAllJobs() throws IOException, InterruptedException {
     return resMgrDelegate.getAllJobs();
+  }
+
+  @Override
+  public List<NodeToLabelsList> getClusterNodeLabels() throws IOException, InterruptedException{
+    return new ArrayList<NodeToLabelsList>();
+  }
+
+  @Override
+  public boolean refreshClusterNodeLabels() throws IOException, InterruptedException {
+    return false;
   }
 
   @Override
